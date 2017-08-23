@@ -31,6 +31,7 @@ public class EmployeeController {
 	private DataSource dataSource;
 	
 	public void setDataSource(DataSource dataSource){
+		logger.info("setDataSource is done!");
 		this.dataSource = dataSource;
 	}
 	

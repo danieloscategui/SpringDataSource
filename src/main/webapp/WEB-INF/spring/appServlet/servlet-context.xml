@@ -34,11 +34,11 @@
 	</beans:bean>
 	
 	<!-- Configure bean to convert JSON to POJO and viceversa -->
-	<beans:beans id="jsonMessageConverter"
+	<beans:bean id="jsonMessageConverter"
 		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-	</beans:beans>
+	</beans:bean>
 
-	<!-- Create DataSouce Bean -->
+	<!-- Create DataSource Bean -->
 	<beans:bean id="dbDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<beans:property name="jndiName" value="java:comp/env/jdbc/MyLocalDB"/> 
 	</beans:bean>
